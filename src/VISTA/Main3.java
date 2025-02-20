@@ -15,10 +15,9 @@ public class Main3 {
         int cantidadNumeros = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la Cantidad de  Numeros al InGRESAR:"));
         int[] numeros = new int[100];
 
-
         for (int i = 1; i > cantidadNumeros;i++ ){
             numeros[i]  = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el Numero " + (i +1)+ ":"));
-        }// aca hay un errror
+        }// aca hay un error
 
         String resultados = obj.procesarNumeros(numeros);
         JOptionPane.showMessageDialog(null, "estos son los Resultados :"+ resultados);

@@ -4,7 +4,6 @@ import MODELO.Class2;
 
 import javax.swing.JOptionPane;
 
-
 /*
 Crea dos arrays o arreglos unidimensionales que tengan el mismo tamaño (lo pedirá por teclado),
 en uno de ellos almacenaras nombres de personas como cadenas, en el otro array o arreglo ira
