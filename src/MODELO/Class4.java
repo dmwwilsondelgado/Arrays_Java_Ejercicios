@@ -10,15 +10,17 @@ public class Class4 {
     private int[] vectorB;
     private  int[] vectorC;
 
-    public Modelo(int n){
+    public int M(int[] n){
         vectorA = new int[n];
         vectorB = new int[n];
         vectorC = new int[n];
     }
+    /*aca rellenamos los vectores*/
     public void LlenarVectores(int[]a,int[]b){
         vectorA = a;
         vectorB = b;
     }
+    /*aca hacemos un metodo para sumar los vectores */
     public  void sumarVectores(){
         for(int i = 0; i < vectorA.length;i++){
            vectorC[i] =vectorA[i] + vectorB[i];

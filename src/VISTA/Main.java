@@ -1,6 +1,7 @@
 package VISTA;
 
-import MODELO.Modelo;
+import MODELO.Class;
+
 import javax.swing.JOptionPane;
 
 /*1.Crea un array o arreglo unidimensional unidimensional con un tamaño de 10,
@@ -9,7 +10,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        Modelo modelo = new Modelo();
+        Class modelo = new Class();
         int[] numeros  = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
         double media = modelo.CalcularMedia(numeros);
         System.out.println(media);
