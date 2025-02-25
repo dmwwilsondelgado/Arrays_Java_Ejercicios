@@ -1,19 +1,35 @@
 package VISTA;
 
-import MODELO.Class;
-
+import MODELO.Class6;
+/**
+ * Escriba un algoritmo que efectúe la suma y la resta de dos vectores de números reales.
+ */
 import javax.swing.JOptionPane;
 
-/*1.Crea un array o arreglo unidimensional unidimensional con un tamaño de 10,
- inserta los valores numéricos que desees de la manera que quieras y muestra por pantalla la media de valores del array.
-*/
-
-public class Main {
+public class Main6 {
     public static void main(String[] args) {
-        Class modelo = new Class();
-        int[] numeros  = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-        double media = modelo.CalcularMedia(numeros);
-        System.out.println(media);
-        JOptionPane.showMessageDialog(null, "La Media de Los Numeros es " + media);
+        double[] vectorA = {1.0, 2.0, 3.0, 4.0};
+        double[] vectorB = {5.0, 6.0, 7.0, 4.0};
+
+        Class6 modelo = new Class6(vectorA, vectorB);
+        modelo.sumarVectores();
+        modelo.restarVectores();
+
+        String mensaje = "Vector A: " + obtenerCadenaVector(modelo.getVectorA()) +
+                "\nVector B: " + obtenerCadenaVector(modelo.getVectorB()) +
+                "\nSuma de Vectores: " + obtenerCadenaVector(modelo.getSumaVectores()) +
+                "\nResta de Vectores: " + obtenerCadenaVector(modelo.getRestaVectores());
+
+        JOptionPane.showMessageDialog(null, mensaje, "Resultados de las Operaciones", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private static String obtenerCadenaVector(double[] vector) {
+        StringBuilder cadena = new StringBuilder();
+        for (double elemento : vector) {
+            cadena.append(elemento).append(" ");
+        }
+        return cadena.toString().trim();
     }
 }
+
+

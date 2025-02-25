@@ -1,7 +1,8 @@
 package VISTA;
 import MODELO.Class5;
 /**
-*Escriba un algoritmo que efectúe la suma y la resta de dos vectores de números reales.
+ Escriba un algoritmo que lea un vector de números enteros y determine el valor máximo y el valor
+ * mínimo.
 */
 
 import javax.swing.JOptionPane;
