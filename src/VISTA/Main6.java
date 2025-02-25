@@ -29,7 +29,7 @@ public class Main6 {
         for (double elemento : vector) {
             cadena.append(elemento).append(" "); // append sirve para concatenar
         }
-        return cadena.toString().trim(); // aca restornamos
+        return cadena.toString().trim(); // to string inmpirme el array en forma de arreglo
     }
 }
 
