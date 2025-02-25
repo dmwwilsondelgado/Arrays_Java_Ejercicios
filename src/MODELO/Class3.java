@@ -7,7 +7,7 @@ public class Class3 {
         int ceros = 0;
         double sumaNegativos = 0;
         double sumaPositivos = 0;
-        for ( int numero : numeros ){
+        for ( int numero : numeros ){ //
             if (numero > 0 ){
                 positivos++;
                 sumaPositivos+= numero;
@@ -18,7 +18,7 @@ public class Class3 {
                 ceros++;
             }
         }
-        double promedioNegativos = (negativos >0) ? sumaNegativos / negativos :0 ;
+        double promedioNegativos = (negativos > 0) ? sumaNegativos / negativos :0 ;
         return "Cantidad de positivos: " + positivos + "\n"
                 + "Cantidad de negativos: " + negativos + "\n"
                 + "Cantidad de ceros: " + ceros + "\n"
